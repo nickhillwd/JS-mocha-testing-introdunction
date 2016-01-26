@@ -3,8 +3,9 @@ var waterBottle = {
   fill: function(){
     this.volume = 100;
   },
-  sip: function(){
-    this.volume -= 10;
+  sip: function(sips){
+    this.volume -= (10*sips);
+    this.notMinus();
   },
   empty: function(){
     this.volume = 0;
